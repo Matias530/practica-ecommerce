@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color: #183641;
+}
+
+#navbar{
+    height: 100px;
+    background-color: rgb(24, 23, 23);
+    color: gray;
+}
+
+#productos, #biblioteca-section{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#carrito{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.search-bar{
+    width: 25%;
+}
+
+.search-bar input{
+    border-radius: 2px;
+    width: 300px;
+    height: 25px;
+    background-color: #2A7B9B;
+    border: solid 1px grey;
+    color: white;
+}
+
+.search-bar input:hover{
+    border: solid 1px blue;
+}
+
+.titulo{
+    text-align: center;
+    color: lightgrey;
+    margin-top: 50px;
+}
+
+.producto{
+    width: 300px;
+    height: 250px;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: #2A7B9B;
+    box-shadow: 1px 1px #888888;
+    margin: 10px;
+    color: white;
+}
+
+.producto img{
+    width: 300px;
+}
+
+.producto p{
+    margin-top: 10px;
+}
+
+.producto-carrito{
+    width: 700px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #2A7B9B;
+    margin: 10px;
+    color: white;
+}
+
+.producto-carrito img{
+    width: 200px;
+    height: 100px;
+}
+
+.producto-carrito div{
+    width: 20%;
+}
+
+.tag{
+    background-color: darkslategrey;
+    color: aliceblue;
+    border-radius: 2px;
+}
+
+.lista{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.link{
+    color: rgb(202, 202, 206);
+    text-decoration: none;
+}
+
+.link:hover{
+    color: white;
+}
+
+.link-actual{
+    color: aqua;
+}
+
+.link-producto{
+    text-decoration: none;
+    color: white;
+}
+
+.lista-nav{
+    width: 60%;
+}
+
+.logo{
+    width: 5%;
+}
+
+.boton{
+    background-color: greenyellow;
+    color: black;
+    border: 0;
+    border-radius: 2px;
+    width: 120px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.boton:hover{
+    cursor: pointer;
+    background-color: rgb(198, 255, 112);
+}
+
+.pie-pagina{
+    margin-top: 50px;
+    background-color: rgb(24, 23, 23);
+    color: gray;
+    height: 100px;
+    position: relative;
+}
+
+.pie-pagina p{
+    position: absolute;
+    bottom: 0;
+}
+
+@media(max-width: 865px){
+    #navbar{
+        height: 250px;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 200px;
+    }
+    .lista{
+        flex-direction: column;
+        align-items: center;
+    }
+    .search-bar{
+        margin: 0 auto;
+        width: 35%;
+    }
+}
